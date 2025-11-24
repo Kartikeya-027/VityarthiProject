@@ -55,10 +55,10 @@ def Display_Time_Slot():
 
 def Select_Time_Slot():
     Display_Time_Slot()
-    Choice = input("\nSelect Time slot (1-6):").strip()
+    Choice = input("\n---SELECT TIME SLOT--- (1-6):").strip()
     while not Choice.isdigit() or int(Choice) < 1 or int(Choice) > len(Time_Slots):
         print("Invalid choice! Please select a valid time slot.")
-        Choice = input("\nSelect Time slot (1-6):").strip()
+        Choice = input("\n---SELECT TIME SLOT--- (1-6):").strip()
     return Time_Slots[int(Choice) - 1]
 
 def Get_appointment_Date():
@@ -151,3 +151,4 @@ if __name__ == "__main__":
 
              
              
+
